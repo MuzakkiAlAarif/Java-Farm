@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="200.0" prefWidth="200.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ItemkuController">
+    <stylesheets>
+        <URL value="@itemku.css" />
+    </stylesheets>
+   <children>
+      <VBox alignment="CENTER" layoutX="50.0" layoutY="2.0" onDragDetected="#setItemData" prefHeight="200.0" prefWidth="100.0" styleClass="shadow" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox prefHeight="74.0" prefWidth="200.0">
+               <children>
+                  <Label fx:id="labelProduk" onDragDetected="#setItemData" prefHeight="66.0" prefWidth="102.0" text="Biji Delima" textAlignment="CENTER">
+                     <font>
+                        <Font name="Cambria" size="15.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="25.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label fx:id="labelharga" onDragDetected="#setItemData" prefHeight="66.0" prefWidth="86.0" text="Rp 1.500" textAlignment="CENTER">
+                     <font>
+                        <Font name="Cambria Bold" size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <ImageView fx:id="image" fitHeight="120.0" fitWidth="108.0" onDragDetected="#setItemData" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Packicon/Bijidelima.png" />
+               </image>
+            </ImageView>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

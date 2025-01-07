@@ -1,0 +1,105 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 3 Dec 2024, 07.27.43
+    Author     : fikrs
+*/
+.shadow{
+    -fx-effect: dropShadow(three-pass-box,rgba(0,0,0,0.1), 10.0 , 0.0 , 0.0 ,10.0);
+}
+.transparent{
+    -fx-background-color:transparent;
+}
+
+.scroll-pane .viewport {
+    -fx-background-color: transparent; /* Transparansi untuk viewport */
+}
+
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+}
+
+.fruit-item{
+    -fx-background-color: FFFFFF;
+       -fx-background-radius: 30;
+}
+ .chosen-fruit-card{
+  -fruit-background-color: #F16C31;
+  -fx-background-radius: 30;
+}
+
+.comboBox{
+    -fx-background-color: rgba(255,255,255,0.3);
+    -fx-background-radius: 30;
+}
+
+.add-btn{
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 100;
+}
+
+.free-delivery-card{
+    -fx-background-color: #D3D3D3;
+    -fx-background-radius: 30;
+}
+
+.shopping-online-card{
+    -fx-background-color: #BAEAC3;
+    -fx-background-radius: 30;
+}
+
+.transparent{
+    -fx-background-color:#00000000;
+}
+
+.scroll-pane {
+    -fx-background-color: transparent; /* Transparansi untuk latar belakang utama */
+    -fx-control-inner-background: transparent; /* Transparansi untuk area kontrol */
+}
+
+.scroll-bar {
+    -fx-background-color: transparent;
+}
+
+.header {
+    -fx-background-color: linear-gradient(to right, #90C8AC, #2C3E50);
+}
+
+.transparent-blur-pane {
+    -fx-background-color: rgba(255, 255, 255, 0.3); /* Latar belakang putih dengan transparansi 30% */
+    -fx-background-radius: 15; /* Sudut membulat */
+    -fx-effect: innershadow(gaussian, rgba(255, 255, 255, 0.5), 10, 0.5, 0, 0),
+                 dropshadow(gaussian, rgba(0, 0, 0, 0.2), 15, 0.5, 0, 0);
+    -fx-padding: 10;
+}
+
+.transparent-blur-box {
+    -fx-background-color: rgba(255, 255, 255, 0.3); /* Putih transparan */
+    -fx-background-radius: 10; /* Sudut membulat */
+    -fx-pref-width: 122; /* Lebar tetap */
+    -fx-pref-height: 70; /* Tinggi tetap */
+    -fx-padding: 10; /* Jarak isi di dalam */
+    -fx-border-color: rgba(255, 255, 255, 0.5); /* Border transparan */
+    -fx-border-width: 2; /* Ketebalan border */
+    -fx-border-radius: 10; /* Radius border membulat */
+}
+
+.text {
+    color: white; /* Warna teks */
+    border: 2px solid black; /* Border gelap di sekitar teks */
+    padding: 5px;
+}
+
+.button1:hover
+{
+-fx-background-color :  #28a2a7;
+-fx-background-radius :  10;
+}
+
+

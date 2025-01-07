@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.LoginController"> 
+    <right>
+        <AnchorPane onMouseDragEntered="#fullScreen" prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: #274d60;">
+            <children>
+            <AnchorPane layoutX="73.0" layoutY="72.0" prefHeight="403.0" prefWidth="700.0" style="-fx-background-color: #28a2a7; -fx-background-radius: 15;" styleClass="shadow" stylesheets="@Editable.css" AnchorPane.bottomAnchor="62.0" AnchorPane.leftAnchor="63.0" AnchorPane.rightAnchor="63.0" AnchorPane.topAnchor="62.0">
+               <children>
+                  <AnchorPane layoutX="16.0" layoutY="14.0" prefHeight="343.0" prefWidth="304.0" style="-fx-background-color: #61b4bc; -fx-background-radius: 0 15 0 15;" styleClass="shadow" stylesheets="@Editable.css">
+                     <children>
+                        <Text fill="WHITE" layoutX="119.0" layoutY="76.0" scaleX="3.0" scaleY="3.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="shadow" text="JAVA FARM">
+                           <font>
+                              <Font name="Franklin Gothic Heavy" size="12.0" />
+                           </font>
+                        </Text>
+                        <Button fx:id="tf4" contentDisplay="CENTER" layoutX="-1.0" layoutY="-2.0" mnemonicParsing="false" onAction="#handleButtonActionMenuLog" prefHeight="26.0" prefWidth="81.0" style="-fx-background-color: #28a2a7; -fx-background-radius: 0 10 10 0;" styleClass="shadow" stylesheets="@Editable.css" text="Back" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="Franklin Gothic Heavy" size="12.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                  <ImageView fitHeight="178.0" fitWidth="295.0" layoutX="17.0" layoutY="99.0" pickOnBounds="true" preserveRatio="true" styleClass="shadow">
+                     <image>
+                        <Image url="@../image/bg%20trans.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="403.2" layoutY="62.4" prefHeight="376.0" prefWidth="334.0" style="-fx-background-color: #28a2a7; -fx-background-radius: 0 15 15 0;" styleClass="shadow" stylesheets="@Editable.css" AnchorPane.bottomAnchor="62.0" AnchorPane.leftAnchor="403.0" AnchorPane.rightAnchor="63.0" AnchorPane.topAnchor="62.0">
+               <children>
+                  <Text fill="WHITE" layoutX="140.0" layoutY="92.0" scaleX="2.0" scaleY="2.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="shadow" text="LOGIN NOW !">
+                     <font>
+                        <Font name="Franklin Gothic Heavy" size="12.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+                <TextField fx:id="tf1" layoutX="488.0" layoutY="211.0" prefHeight="26.0" prefWidth="185.0" promptText="input email" style="-fx-background-radius: 5;" styleClass="shadow" stylesheets="@Editable.css" />
+                <PasswordField fx:id="tf2" layoutX="488.0" layoutY="268.0" prefHeight="26.0" prefWidth="185.0" promptText="input password" style="-fx-background-radius: 5;" styleClass="shadow" stylesheets="@Editable.css">
+               <contextMenu>
+                  <ContextMenu>
+                    <items>
+                      <MenuItem mnemonicParsing="false" text="Unspecified Action" />
+                    </items>
+                  </ContextMenu>
+               </contextMenu>
+            </PasswordField>
+                <Button fx:id="tf3" layoutX="522.0" layoutY="338.0" mnemonicParsing="false" onAction="#handleButtonActionshop" prefHeight="26.0" prefWidth="114.0" style="-fx-background-color: #61b4bc; -fx-background-radius: 15;" styleClass="shadow" stylesheets="@Editable.css" text="Login" textFill="WHITE">
+               <font>
+                  <Font name="Franklin Gothic Heavy" size="12.0" />
+               </font></Button>
+                <Hyperlink fx:id="Loginkuy" layoutX="601.0" layoutY="370.0" onAction="#handleHyperlinkActionRegist" prefHeight="26.0" prefWidth="52.0" scaleX="0.9" scaleY="0.9" scaleZ="0.9" style="-fx-underline: #e#007bff;" text="Sign Up" textFill="#fbfcfc" underline="true" />
+            <Hyperlink layoutX="502.0" layoutY="370.0" prefHeight="26.0" prefWidth="109.0" scaleX="0.9" scaleY="0.9" scaleZ="0.9" style="-fx-underline: #e#007bff;" text="Not have account?" textFill="#fbfcfc" />
+            <Text fill="WHITE" layoutX="490.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email" />
+            <Text fill="WHITE" layoutX="490.0" layoutY="261.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" />
+            <ImageView fx:id="Exit" fitHeight="25.0" fitWidth="25.0" layoutX="766.0" layoutY="9.0" onMouseClicked="#handleClose" pickOnBounds="true" preserveRatio="true" scaleX="0.9" scaleY="0.9">
+               <image>
+                  <Image url="@../image/exitbtn.png" />
+               </image>
+            </ImageView>
+            </children>
+        </AnchorPane>
+    </right>
+</BorderPane>

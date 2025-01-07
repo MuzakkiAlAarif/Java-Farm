@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.KeranjangController">
+   <left>
+      <AnchorPane prefHeight="502.0" prefWidth="800.0" style="-fx-background-color: #274d60;" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane layoutX="43.2" layoutY="31.0" prefHeight="421.6" prefWidth="718.0" style="-fx-background-color: transparent; -fx-background-radius: 15;" styleClass="shadow" stylesheets="@Javashop.css" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="40.0">
+               <children>
+                  <AnchorPane layoutX="157.0" layoutY="-0.19999999999999996" prefHeight="50.0" prefWidth="498.0" style="-fx-background-color: #61b4bc; -fx-background-radius: 10;" styleClass="shadow" stylesheets="@Editable.css" AnchorPane.bottomAnchor="370.4" AnchorPane.rightAnchor="64.60000000000002" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Line endX="475.00006103515625" endY="27.20000457763672" layoutY="-2.0" startX="121.4000244140625" startY="27.20000457763672" />
+                     </children></AnchorPane>
+                  <AnchorPane layoutX="653.0" layoutY="14.0" prefHeight="53.0" prefWidth="52.0" style="-fx-background-color: #61b4bc; -fx-background-radius: 10;" styleClass="shadow" stylesheets="@Editable.css" AnchorPane.bottomAnchor="368.8" AnchorPane.leftAnchor="668.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="6.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/usericon.png" />
+                           </image>
+                        </ImageView>
+                        <Button fx:id="Profilbtn1" layoutX="1.0" layoutY="1.0" mnemonicParsing="false" onAction="#handleButtonActionProfil" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: transparent;" />
+                     </children></AnchorPane>
+                  <AnchorPane layoutX="156.0" layoutY="54.0" prefHeight="298.0" prefWidth="562.0" style="-fx-background-color: #61b4bc; -fx-background-radius: 10;" styleClass="shadow" stylesheets="@Editable.css">
+                     <children>
+                        <ScrollPane layoutX="21.0" layoutY="43.0" prefHeight="266.0" prefWidth="519.0" style="-fx-background-color: transparent;" styleClass="transparent" stylesheets="@Editable.css" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="21.0" AnchorPane.rightAnchor="22.199999999999932">
+                           <content>
+                              <VBox prefHeight="1000.0" prefWidth="526.0">
+                                 <children>
+                                    <HBox prefHeight="125.0" prefWidth="526.0">
+                                       <children>
+                                          <HBox layoutX="10.0" layoutY="10.0" prefHeight="118.0" prefWidth="526.0">
+                                             <children>
+                                                <VBox prefHeight="126.0" prefWidth="498.0">
+                                                   <children>
+                                                      <AnchorPane prefHeight="113.0" prefWidth="494.0">
+                                                         <children>
+                                                            <HBox layoutY="-1.0" prefHeight="111.0" prefWidth="498.0">
+                                                               <children>
+                                                                  <AnchorPane prefHeight="111.0" prefWidth="538.0" style="-fx-background-color: white; -fx-background-radius: 10;" styleClass="shadow">
+                                                                     <children>
+                                                                        <ImageView fx:id = "imageview" fitHeight="80.0" fitWidth="80.0" layoutX="14.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+                                                                           <image>
+                                                                              <Image url="@../image/Bijidelima.png" />
+                                                                           </image></ImageView>
+                                                                        <Text layoutX="108.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Harga :">
+                                                                           <font>
+                                                                              <Font name="Cambria" size="14.0" />
+                                                                           </font>
+                                                                        </Text>
+                                                                        <Text layoutX="110.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Stok  :">
+                                                                           <font>
+                                                                              <Font name="Cambria" size="14.0" />
+                                                                           </font>
+                                                                        </Text>
+                                                                        <Label fx:id = "productNama" alignment="CENTER" contentDisplay="CENTER" layoutX="111.0" layoutY="16.0" prefHeight="18.0" prefWidth="79.0" scaleX="0.8" scaleY="0.8" text="Label">
+                                                                           <font>
+                                                                              <Font size="18.0" />
+                                                                           </font></Label>
+                                                                        <Label fx:id = "productHarga" alignment="CENTER" contentDisplay="CENTER" layoutX="151.0" layoutY="45.0" prefHeight="18.0" prefWidth="79.0" scaleX="0.8" scaleY="0.8" text="Label">
+                                                                           <font>
+                                                                              <Font size="14.0" />
+                                                                           </font></Label>
+                                                                        <Label fx:id = "productStock" alignment="CENTER" contentDisplay="CENTER" layoutX="166.0" layoutY="64.0" prefHeight="18.0" prefWidth="50.0" scaleX="0.8" scaleY="0.8" text="Label">
+                                                                           <font>
+                                                                              <Font size="14.0" />
+                                                                           </font></Label>
+                                                                        <CheckBox fx:id="selectAll1" layoutX="468.0" layoutY="11.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="9.0" text="Semua" textFill="WHITE" />
+                                                                        <HBox layoutX="407.0" layoutY="74.0" prefHeight="26.0" prefWidth="75.0">
+                                                                           <children>
+                                                                              <Button fx:id="tambahbtn1" mnemonicParsing="false" onAction="#handleTambahButton1" prefHeight="26.0" prefWidth="27.0" text="+" />
+                                                                              <Label fx:id="quantityLabels1" prefHeight="30.0" prefWidth="28.0" text="Label">
+                                                                                 <padding>
+                                                                                    <Insets left="5.0" />
+                                                                                 </padding></Label>
+                                                                              <Button fx:id="kurangibtn1" mnemonicParsing="false" onAction="#handleKurangButton1" prefHeight="26.0" prefWidth="26.0" text="-" />
+                                                                           </children>
+                                                                        </HBox>
+                                                                     </children>
+                                                                  </AnchorPane>
+                                                               </children>
+                                                            </HBox>
+                                                         </children>
+                                                      </AnchorPane>
+                                                      <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="15.0" prefWidth="526.0" />
+                                                   </children>
+                                                </VBox>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </HBox>
+                                    <HBox layoutX="10.0" layoutY="10.0" prefHeight="126.0" prefWidth="490.0">
+                                       <children>
+                                          <HBox layoutX="10.0" layoutY="10.0" prefHeight="126.0" prefWidth="477.0">
+                                             <children>
+                                                <VBox prefHeight="126.0" prefWidth="463.0">
+                                                   <children>
+                                                      <AnchorPane prefHeight="113.0" prefWidth="518.0">
+                                                         <children>
+                                                            <HBox layoutY="-1.0" prefHeight="111.0" prefWidth="518.0" />
+                                                         </children>
+                                                      </AnchorPane>
+                                                      <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="15.0" prefWidth="526.0" />
+                                                   </children>
+                                                </VBox>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                           </content>
+                        </ScrollPane>
+                        <CheckBox fx:id="selectAll" layoutX="490.0" layoutY="9.0" mnemonicParsing="false" prefHeight="14.0" prefWidth="60.0" text="Semua" textFill="WHITE" />
+                     </children>
+                  </AnchorPane>
+                  <Button fx:id="Otwpay" layoutX="639.0" layoutY="356.0" mnemonicParsing="false" onAction="#handleNextButtonPaynow" prefHeight="29.0" prefWidth="80.0" style="-fx-background-color: yellow;" styleClass="shadow" stylesheets="@Editable.css" text="Payment" />
+                  <Button fx:id="Otworder" layoutX="639.0" layoutY="389.0" mnemonicParsing="false" onAction="#handleNextButtonOrdernow" prefHeight="29.0" prefWidth="80.0" style="-fx-background-color: #2596be; -fx-background-radius: 5 10 10 5;" styleClass="shadow" stylesheets="@Editable.css" text="Order" />
+                  <AnchorPane layoutX="157.0" layoutY="389.0" prefHeight="64.0" prefWidth="475.0" style="-fx-background-color: #61b4bc; -fx-background-radius: 10 0 0 10;" styleClass="shadow" stylesheets="@Editable.css" AnchorPane.bottomAnchor="0.0">
+                     <children>
+                        <Text layoutX="27.0" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Harga :">
+                           <font>
+                              <Font name="Cambria" size="14.0" />
+                           </font>
+                        </Text>
+                        <Label layoutX="104.0" layoutY="6.0" prefHeight="18.0" prefWidth="127.0" />
+                        <Text layoutX="357.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Harga :">
+                           <font>
+                              <Font name="Cambria" size="14.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="178.0" layoutY="22.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Harga :">
+                           <font>
+                              <Font name="Cambria" size="14.0" />
+                           </font>
+                        </Text>
+                        <MenuButton layoutX="27.0" layoutY="25.0" mnemonicParsing="false" text="MenuButton">
+                          <items>
+                            <MenuItem mnemonicParsing="false" text="Action 1" />
+                            <MenuItem mnemonicParsing="false" text="Action 2" />
+                          </items>
+                        </MenuButton>
+                        <MenuButton layoutX="178.0" layoutY="25.0" mnemonicParsing="false" text="MenuButton">
+                          <items>
+                            <MenuItem mnemonicParsing="false" text="Action 1" />
+                            <MenuItem mnemonicParsing="false" text="Action 2" />
+                          </items>
+                        </MenuButton>
+                        <Label layoutX="381.0" layoutY="29.0" text="Label" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="-0.1999999999999602" prefHeight="421.6" prefWidth="140.0" style="-fx-background-color: #61b4bc; -fx-background-radius: 10 0 10 0;" styleClass="shadow" stylesheets="@Editable.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="577.8" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <VBox layoutX="15.0" layoutY="79.0" prefHeight="331.0" prefWidth="99.0" AnchorPane.rightAnchor="14.600000000000009">
+                           <children>
+                              <HBox prefHeight="45.0" prefWidth="113.0">
+                                 <children>
+                                    <AnchorPane prefHeight="48.0" prefWidth="57.0" />
+                                    <AnchorPane prefHeight="46.0" prefWidth="56.0">
+                                       <children>
+                                          <Button fx:id="Profilbtn" alignment="BASELINE_RIGHT" layoutX="-36.0" layoutY="3.2" mnemonicParsing="false" onAction="#handleButtonActionProfil" prefHeight="38.0" prefWidth="114.0" stylesheets="@Editable.css" text="Pengguna" AnchorPane.bottomAnchor="3.0" AnchorPane.topAnchor="3.0">
+                                             <font>
+                                                <Font name="Cambria" size="12.0" />
+                                             </font>
+                                             <styleClass>
+                                                <String fx:value="shadow" />
+                                                <String fx:value="button1" />
+                                                <String fx:value="transparent" />
+                                             </styleClass>
+                                             <padding>
+                                                <Insets bottom="2.0" right="24.0" />
+                                             </padding>
+                                          </Button>
+                                          <ImageView fitHeight="30.0" fitWidth="29.0" layoutX="-31.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true" styleClass="shadow">
+                                             <image>
+                                                <Image url="@../image/usericon.png" />
+                                             </image>
+                                          </ImageView>
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </HBox>
+                              <HBox layoutX="10.0" layoutY="10.0" prefHeight="44.0" prefWidth="113.0">
+                                 <children>
+                                    <AnchorPane prefHeight="48.0" prefWidth="46.0" />
+                                    <AnchorPane prefHeight="71.0" prefWidth="81.0">
+                                       <children>
+                                          <Button fx:id="Berandabtn" alignment="BASELINE_CENTER" layoutX="-34.0" layoutY="-1.0" mnemonicParsing="false" onAction="#handleNextButtonBeranda" prefHeight="36.0" prefWidth="114.0" text="Beranda">
+                                             <font>
+                                                <Font name="Cambria" size="12.0" />
+                                             </font>
+                                             <styleClass>
+                                                <String fx:value="shadow" />
+                                                <String fx:value="transparent" />
+                                                <String fx:value="button1" />
+                                             </styleClass>
+                                             <padding>
+                                                <Insets left="8.0" />
+                                             </padding>
+                                          </Button>
+                                          <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="-27.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true" styleClass="shadow">
+                                             <image>
+                                                <Image url="@../image/homeicon.png" />
+                                             </image>
+                                          </ImageView>
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </HBox>
+                              <HBox layoutX="10.0" layoutY="61.0" prefHeight="43.0" prefWidth="113.0">
+                                 <children>
+                                    <AnchorPane prefHeight="49.0" prefWidth="50.0">
+                                       <children>
+                                          <ImageView fitHeight="24.0" fitWidth="27.0" layoutX="4.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true" styleClass="shadow">
+                                             <image>
+                                                <Image url="@../image/carticons.png" />
+                                             </image>
+                                          </ImageView>
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane prefHeight="25.0" prefWidth="78.0">
+                                       <children>
+                                          <Button fx:id="Keranjangbtn" alignment="BASELINE_CENTER" layoutX="-36.0" layoutY="-1.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="114.0" text="Keranjang">
+                                             <font>
+                                                <Font name="Cambria" size="12.0" />
+                                             </font>
+                                             <styleClass>
+                                                <String fx:value="shadow" />
+                                                <String fx:value="transparent" />
+                                                <String fx:value="button1" />
+                                             </styleClass>
+                                             <padding>
+                                                <Insets bottom="2.0" left="16.0" />
+                                             </padding>
+                                          </Button>
+                                          <ImageView fitHeight="24.0" fitWidth="27.0" layoutX="-30.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true" styleClass="shadow">
+                                             <image>
+                                                <Image url="@../image/carticons.png" />
+                                             </image>
+                                          </ImageView>
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </HBox>
+                              <HBox layoutX="10.0" layoutY="112.0" prefHeight="44.0" prefWidth="113.0">
+                                 <children>
+                                    <AnchorPane prefHeight="42.0" prefWidth="40.0" />
+                                 </children>
+                              </HBox>
+                              <HBox layoutX="10.0" layoutY="164.0" prefHeight="42.0" prefWidth="113.0">
+                                 <children>
+                                    <AnchorPane prefHeight="49.0" prefWidth="44.0" />
+                                    <AnchorPane prefHeight="200.0" prefWidth="200.0" />
+                                 </children>
+                              </HBox>
+                              <HBox layoutX="10.0" layoutY="212.0" prefHeight="51.0" prefWidth="130.0" />
+                              <HBox layoutX="10.0" layoutY="252.0" prefHeight="37.0" prefWidth="122.0" />
+                              <HBox layoutX="10.0" layoutY="226.0" prefHeight="34.0" prefWidth="122.0">
+                                 <children>
+                                    <AnchorPane prefHeight="21.0" prefWidth="54.0">
+                                       <children>
+                                          <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="6.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../image/Outicon.png" />
+                                             </image>
+                                          </ImageView>
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <Button fx:id="Logoutbtn" alignment="BOTTOM_RIGHT" layoutX="-34.0" layoutY="-6.0" mnemonicParsing="false" onAction="#handleNextButtonLogout" prefHeight="39.0" prefWidth="114.0" text="Keluar" textFill="RED">
+                                             <font>
+                                                <Font name="Cambria" size="12.0" />
+                                             </font>
+                                             <padding>
+                                                <Insets bottom="12.0" right="40.0" />
+                                             </padding>
+                                             <styleClass>
+                                                <String fx:value="shadow" />
+                                                <String fx:value="button1" />
+                                                <String fx:value="transparent" />
+                                             </styleClass>
+                                          </Button>
+                                          <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="-26.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../image/Outicon.png" />
+                                             </image>
+                                          </ImageView>
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <AnchorPane prefHeight="66.0" prefWidth="142.0" scaleX="0.9" style="-fx-background-color: #28a2a7; -fx-background-radius: 10;" styleClass="shadow" AnchorPane.bottomAnchor="348.6" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="4.7999">
+                           <children>
+                              <ImageView fitHeight="65.0" fitWidth="86.0" layoutX="26.6" layoutY="4.8" pickOnBounds="true" preserveRatio="true" styleClass="shadow" AnchorPane.leftAnchor="26.6" AnchorPane.rightAnchor="29.0" AnchorPane.topAnchor="4.8">
+                                 <image>
+                                    <Image url="@../image/bg%20trans.png" />
+                                 </image>
+                              </ImageView>
+                              <Text fill="WHITE" layoutX="43.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Java Farm" wrappingWidth="72.45261001586914">
+                                 <font>
+                                    <Font name="Franklin Gothic Heavy" size="12.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+            <Text fill="WHITE" layoutX="225.0" layoutY="68.0" scaleX="1.3" scaleY="1.3" strokeType="OUTSIDE" strokeWidth="0.0" text="KERANJANG" wrappingWidth="72.45261001586914">
+               <font>
+                  <Font name="Franklin Gothic Heavy" size="12.0" />
+               </font>
+            </Text>
+            <ImageView fx:id="Exit" fitHeight="25.0" fitWidth="25.0" layoutX="766.0" layoutY="9.0" onDragDetected="#handleClose" onMouseClicked="#handleClose" pickOnBounds="true" preserveRatio="true" scaleX="0.9" scaleY="0.9">
+               <image>
+                  <Image url="@../image/exitbtn.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </left>
+</BorderPane>
